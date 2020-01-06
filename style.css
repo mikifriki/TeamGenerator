@@ -1,0 +1,91 @@
+:root {
+    --base: #ffc600;
+
+}
+
+.hl {
+    color: var(--base);
+    font-size: 4rem;
+}
+
+.group-header {
+    font-size: 3rem;
+    color: var(--base);
+}
+
+.group-names {
+    font-size: 1.5rem;
+}
+
+body {
+    text-align: center;
+    background: #193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+}
+
+input {
+    width: 100px;
+}
+
+.groups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.group {
+    margin: 1rem;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 34px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25%;
+    padding-right: 21%;
+    justify-content: space-evenly;
+}
+
+.pergroup, .numgroups {
+    display: flex;
+    width: 100%;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.2rem;
+    width: 20%;
+    border-bottom: 0.3rem solid transparent;
+}
+
+textarea {
+    min-height: 100px;
+    min-width: 130px;
+    max-width: 100px;
+    border: solid 1px silver;
+    background: #fff;
+    border-radius: 0.2rem;
+    padding: 30px;
+}
+
+button {
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    background-image: none;
+    padding: 6px 12px;
+    font-size: 1.4rem;
+    border-radius: 0.2rem;
+    border: 1px solid transparent;
+    text-decoration: none;
+    user-select: none;
+    background: #4DA5E3;
+}
+
+button:active {
+    box-shadow:  0 0 10px #000000;
+}
