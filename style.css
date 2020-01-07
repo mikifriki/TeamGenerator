@@ -7,6 +7,9 @@
     font-size: 5rem;
 }
 
+.controls {
+    margin-top: 8rem;
+}
 .group-header {
     font-size: 3rem;
     color: var(--base);
