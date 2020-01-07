@@ -17,7 +17,7 @@ function mapArray() {
     
     for (i = 0; i < numgroups; i++) {
         let first = document.createElement('div');
-        first.innerHTML = `<div class="group"><h2 class="group-header">Group ${j++}</h2></div>`;
+        first.innerHTML = `<div class="group col-md-4"><h2 class="group-header">Group ${j++}</h2></div>`;
         grouping.appendChild(first);
     }
     
@@ -33,3 +33,4 @@ function mapArray() {
         }
     });
 }
+

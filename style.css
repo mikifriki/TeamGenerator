@@ -1,11 +1,10 @@
 :root {
     --base: #ffc600;
-
 }
 
 .hl {
     color: var(--base);
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .group-header {
@@ -22,32 +21,11 @@ body {
     background: #193549;
     color: white;
     font-family: 'helvetica neue', sans-serif;
-    font-weight: 100;
-}
-
-input {
-    width: 100px;
-}
-
-.groups {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.group {
-    margin: 1rem;
+    font-weight: 100;    
 }
 
 .controls {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 34px;
-    align-items: center;
-    justify-content: center;
-    padding-left: 25%;
-    padding-right: 21%;
-    justify-content: space-evenly;
+    font-size: 3rem;
 }
 
 .pergroup, .numgroups {
@@ -63,21 +41,21 @@ input {
 }
 
 textarea {
-    min-height: 100px;
-    min-width: 130px;
-    max-width: 100px;
-    border: solid 1px silver;
-    background: #fff;
-    border-radius: 0.2rem;
-    padding: 30px;
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 200px;
+    max-width: 200px;
+    border: solid 1px rgb(192, 192, 192);
+    color: black;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    font-size: 1.5rem;
 }
 
 button {
     text-transform: uppercase;
     color: white;
     cursor: pointer;
-    background-image: none;
-    padding: 6px 12px;
     font-size: 1.4rem;
     border-radius: 0.2rem;
     border: 1px solid transparent;

@@ -4,24 +4,28 @@
 	<meta charset="UTF-8">
 	<title>Create random teams</title>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-	<script src="groupGenerator.js"></script> 
+	<link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+	<script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="style.css">
+	<script src="groupGenerator.js"></script> 
 </head>
 <body>
-<h2>Create randomized <span class='hl'>Teams</span></h2>
-	<div class="controls">
-		<textarea id="textarea">Enter your names here. Add new names to a new line</textarea>
-		<p>People per team: <input id="perGroup" class="pergroup" type="number" value="2"/></p>
-		<p>Number of teams: <input id="numGroups" class="numgroups" type="number" value="3" />
+<h1>Create randomized <span class='hl'>Teams</span></h1>
+<div class="container">
+	<div class="row">
+		<div class="controls">
+			<div class="col-md-4"><textarea rows="3" id="textarea">Enter your names here. Add new names to a new line</textarea> </div>
+			<div class="col-md-4"><p>People per team: <input id="perGroup" class="pergroup d-flex" type="number" value="2"/></p></div>
+			<div class="col-md-4"><p>Number of teams: <input id="numGroups" class="numgroups " type="number" value="3" /></div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<button onclick="mapArray()" class="btn-lg">Create Teams!</button>
+	<div class="row">
+		<div id="groups" class="groups"></div>
 	</div>
 	
-<div>
-		<button onclick="mapArray()">Create Teams!</button>
-	</div>
-	<div id="groups" class="groups"></div>
-
-<script>
-</script>
-
+</div>
 </body>
 </html>
