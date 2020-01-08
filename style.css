@@ -38,13 +38,17 @@ body {
     font-size: 1.2rem;
     margin: 0 auto;
     padding: 0.5rem 1.2rem;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     width: 20%;
     border-bottom: 0.3rem solid transparent;
 }
 
+#groups {
+    animation: fadein 3s;
+}
+
 textarea {
-    min-height: 150px;
+    min-height: 170px;
     max-height: 150px;
     min-width: 200px;
     max-width: 200px;
@@ -65,8 +69,18 @@ button {
     text-decoration: none;
     user-select: none;
     background: #4DA5E3;
+    margin-top: 14%;
 }
 
 button:active {
     box-shadow:  0 0 10px #000000;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
